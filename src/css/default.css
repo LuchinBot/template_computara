@@ -1,0 +1,39 @@
+body {
+  background: rgb(14,75,88);
+  background: linear-gradient(45deg, rgba(14,75,88,1) 0%, rgba(2,15,37,1) 100%);
+  background-repeat: no-repeat;
+  font-family: 'Inter', 'Inter Prevent Layout Shift', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+.logo{
+  width: 35px;
+}
+.computara{
+  margin-top: -7px;
+  position: relative;
+}
+.computara::after{
+  content: '';
+  margin-left: 7px;
+  position: absolute;
+  width: 65px;
+  height: 20px;
+  border-radius: 10px;
+  margin-top: 13px;
+  padding-top: -10px;
+  background-image: linear-gradient(to left, rgb(59, 158, 223) 60%, #1aa7c3);
+}
+.computara::before{
+  content: 'YOUTUBE';
+  color: #fff;
+  margin-left: 10px;
+  font-size: 10px;
+  right: -63px;
+  top: 3px;
+  position: absolute;
+  z-index: 1;
+  animation: computara-text 7s ease-in-out linear;
+}
+
+.text-computara{
+  color: #33ddff;
+}
