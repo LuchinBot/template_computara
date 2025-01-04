@@ -37,3 +37,9 @@ body {
 .text-computara{
   color: #33ddff;
 }
+.bg-header{
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    background: #00000028;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
+}
