@@ -18,24 +18,32 @@
 	</head>
 
 	<body>
-		<div class="main w-full">
+		<div class="main w-full overflow-hidden">
 			<section class="">
-				<nav class="container mx-auto px-5 py-10 top-0 z-10 w-full">
-					<div class="flex justify-between items-center">
+				<nav class="container mx-auto px-5 pt-10 pb-0 md:py-10 top-0 z-10 w-full">
+					<div class="w-full flex flex-wrap items-center justify-between">
 						<a href="index.html" class="text-4xl font-bold text-white flex items-center">
-							<img src="src/img/logo.svg" class="logo mr-2" alt="" />
+							<img src="src/img/logo.svg" class="logo mr-2" alt="Logo" />
 							<span class="computara">compu<span class="text-computara">tara</span></span>
 						</a>
-						<div>
-							<ul class="flex space-x-6 font-light text-white text-lg">
+
+						<button id="menu-toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+							<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+								<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+							</svg>
+						</button>
+						<div class="hidden w-full md:block md:w-auto" id="navbar-default">
+							<ul class="font-light flex flex-col text-lg p-4 md:px-2 md:py-2 mt-4 border border-gray-100 rounded-[5px] bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:bg-transparent dark:bg-gray-800 dark:border-gray-700">
 								<li>
-									<a href="tutoriales.html" class=""><i class="fa fa-video mr-2"></i>Tutoriales variados</a>
+									<a href="tutoriales.html" class="block h-100 p-2 rounded-[5px] text-gray-300 hover:text-gray-50 hover:bg-gray-400 hover:bg-opacity-10 transition-all duration-300 ease-in-out"> <i class="fa fa-face-smile-wink mr-2"></i>Nuestros <strong>Tutoriales</strong></a>
 								</li>
 								<li>
-									<a href="programas.html" class=""><i class="fab fa-windows mr-2"></i>Programas escenciales</a>
+									<a href="programas.html" class="block h-100 p-2 rounded-[5px] text-gray-300 hover:text-gray-50 hover:bg-gray-400 hover:bg-opacity-10 transition-all duration-300 ease-in-out"> <i class="fa fa-hand-peace mr-2"></i><strong>Programas</strong> Importantes</a>
 								</li>
 								<li>
-									<a href="" class="px-5 py-2 font-semibold duration-500 bg-gradient-computara-1 text-white rounded-[5px] hover:bg-gradient-computara-2 transition-all"><i class="fa fa-globe mr-2"></i>Network</a>
+									<a href="" class="flex h-full justify-start items-center px-5 py-1 font-semibold text-gray-100 hover:text-gray-50 rounded-[5px] bg-gradient-to-r from-[#3b9edf] to-[#1aa7c3] hover:from-[#1aa7c3cd] hover:to-[#2b80b9] transition-all duration-300 ease-in-out">
+										<i class="fa fa-globe mr-2"></i>Network
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -44,7 +52,7 @@
 			</section>
 			<section class="container mx-auto py-16 px-5">
 				<div class="grid grid-cols-12">
-					<div class="items-center flex text-white font-light px-0 col-span-12 md:col-span-6">
+					<div class="items-center flex text-white font-light px-0 col-span-12 md:col-span-6 mb-10 md:mb-0">
 						<div class="pr-20">
 							<h1 class="text-5xl font-semibold text-gray-200" data-aos="fade-up">¡No te pierdas ni un solo!</h1>
 							<h1 class="text-6xl font-bold text-white" data-aos="fade-up" data-aos-delay="200">Tutorial en <strong class="font-bold text-computara">YouTube</strong></h1>
@@ -53,122 +61,178 @@
 						</div>
 					</div>
 					<div class="col-span-12 md:col-span-6">
-						<div class="image-main relative w-full">
+						<div class="image-main relative w-[100%] h-[300px] md:w-[600px] md:h-[500px]" data-aos="fade-up">
 							<div class="image-background"></div>
 							<div class="image-url" style="background-image: url('src/img/image.png')"></div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="container mx-auto py-10 px-5">
-				<div class="flex justify-between items-center text-white py-10" data-aos="fade-up">
-					<div class="text-left">
-						<h1 class="text-2xl text-computara font-extralight">Descubre los <span class="text-gray-800 font-semibold rounded-[5px] bg-white px-3">Tutoriales</span></h1>
-						<p class="mt-2 mb-5 font-extralight text-lg text-gray-300">Aprende todo lo que necesitas saber sobre Windows y mucho más con nuestros tutoriales detallados y fáciles de seguir.</p>
-					</div>
-					<div class="text-right">
-						<a href="" class="bg-gradient-computara-2 px-4 py-2 text-white rounded-[5px] font-light group hover:bg-gradient-computara-1 transition-background-color duration-1000 flex items-center gap-2">
-							Ver más
-							<i class="fa fa-angles-right opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transform transition-all duration-300"></i>
-						</a>
-					</div>
-				</div>
-				<div class="container mx-auto py-0" data-aos="fade-up">
-					<div class="grid grid-cols-3 gap-4">
-						<div class="overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 group">
-							<div class="relative bg-cover bg-center h-80" style="background-image: url('src/img/image.png')">
-								<span class="absolute transition-opacity duration-300 inset-0 bg-custom-gradient group-hover:opacity-80"></span>
-								<a href="" class="absolute w-full h-full flex flex-col items-start justify-end text-slate-50 p-8 text-start">
-									<p class="font-light text-md my-0 truncate w-full">Tutorial</p>
-									<h1 class="text-2xl font-bold my-0 truncate w-full"><strong>Tener el CPU al 100%</strong></h1>
-									<p class="font-light text-md my-0 truncate w-full">Aprende como utilizar tu CPU al 100%</p>
-								</a>
-							</div>
+			<section class="bg-slate-950 bg-opacity-10 py-20">
+				<div class="container mx-auto px-5">
+					<div class="flex justify-between items-center text-white pb-10" data-aos="fade-up">
+						<div class="text-left">
+							<h1 class="text-2xl text-computara font-extralight">Descubre los <strong class="text-white font-semibold">tutoriales</strong></h1>
+							<p class="mt-2 mb-5 font-extralight text-lg text-gray-300">Aprende todo lo que necesitas saber sobre Windows y mucho más con nuestros tutoriales detallados y fáciles de seguir</p>
 						</div>
-						<div class="overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 group">
-							<div class="relative bg-cover bg-center h-80" style="background-image: url('src/img/image.png')">
-								<span class="absolute transition-opacity duration-300 inset-0 bg-custom-gradient group-hover:opacity-80"></span>
-								<a href="" class="absolute w-full h-full flex flex-col items-start justify-end text-slate-50 p-8 text-start">
-									<p class="font-light text-md my-0 truncate w-full">Tutorial</p>
-									<h1 class="text-2xl font-bold my-0 truncate w-full"><strong>Tener el CPU al 100%</strong></h1>
-									<p class="font-light text-md my-0 truncate w-full">Aprende como utilizar tu CPU al 100%</p>
-								</a>
-							</div>
-						</div>
-						<div class="overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 group">
-							<div class="relative bg-cover bg-center h-80" style="background-image: url('src/img/image.png')">
-								<span class="absolute transition-opacity duration-300 inset-0 bg-custom-gradient group-hover:opacity-80"></span>
-								<a href="" class="absolute w-full h-full flex flex-col items-start justify-end text-slate-50 p-8 text-start">
-									<p class="font-light text-md my-0 truncate w-full">Tutorial</p>
-									<h1 class="text-2xl font-bold my-0 truncate w-full"><strong>Tener el CPU al 100%</strong></h1>
-									<p class="font-light text-md my-0 truncate w-full">Aprende como utilizar tu CPU al 100%</p>
-								</a>
-							</div>
+						<div class="text-right">
+							<a href="" class="bg-gradient-computara-2 px-4 py-2 text-white rounded-[5px] font-light group hover:bg-gradient-computara-1 transition-background-color duration-1000 flex items-center gap-2">
+								Ver más
+								<i class="fa fa-angles-right opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transform transition-all duration-300"></i>
+							</a>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section class="container mx-auto py-10 px-5">
-				<div class="flex justify-between items-center text-white py-10" data-aos="fade-up">
-					<div class="text-left">
-						<h1 class="text-2xl text-computara font-extralight">Mejores <span class="text-white font-semibold rounded-[5px] bg-gradient-computara-1 px-3">Programas</span></h1>
-						<p class="mt-2 mb-5 font-extralight text-lg text-gray-300">Aprende todo lo que necesitas saber sobre Windows y mucho más con nuestros tutoriales detallados y fáciles de seguir.</p>
-					</div>
-					<div class="text-right">
-						<a href="" class="bg-gradient-computara-2 px-4 py-2 text-white rounded-[5px] font-light group hover:bg-gradient-computara-1 transition-background-color duration-1000 flex items-center gap-2">
-							Ver más
-							<i class="fa fa-angles-right opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transform transition-all duration-300"></i>
-						</a>
-					</div>
-				</div>
-				<div class="container mx-auto py-0" data-aos="fade-up">
-					<div class="grid grid-cols-3 gap-4">
-						<div class="overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 group">
-							<div class="relative bg-cover bg-center h-80" style="background-image: url('src/img/image.png')">
-								<span class="absolute transition-opacity duration-300 inset-0 bg-custom-gradient group-hover:opacity-80"></span>
-								<a href="" class="absolute w-full h-full flex flex-col items-start justify-end text-slate-50 p-8 text-start">
-									<p class="font-light text-md my-0 truncate w-full">Tutorial</p>
-									<h1 class="text-2xl font-bold my-0 truncate w-full"><strong>Tener el CPU al 100%</strong></h1>
-									<p class="font-light text-md my-0 truncate w-full">Aprende como utilizar tu CPU al 100%</p>
-								</a>
+					<div class="container mx-auto py-0" data-aos="fade-up">
+						<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+							<div class="overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 group">
+								<div class="relative bg-cover bg-center h-80" style="background-image: url('src/img/image.png')">
+									<span class="absolute transition-opacity duration-300 inset-0 bg-custom-gradient group-hover:opacity-80"></span>
+									<a href="" class="absolute w-full h-full flex flex-col items-start justify-end text-slate-50 p-8 text-start">
+										<p class="font-light text-md my-0 truncate w-full">Tutorial</p>
+										<h1 class="text-2xl font-bold my-0 truncate w-full"><strong>Tener el CPU al 100%</strong></h1>
+										<p class="font-light text-md my-0 truncate w-full">Aprende como utilizar tu CPU al 100%</p>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 group">
-							<div class="relative bg-cover bg-center h-80" style="background-image: url('src/img/image.png')">
-								<span class="absolute transition-opacity duration-300 inset-0 bg-custom-gradient group-hover:opacity-80"></span>
-								<a href="" class="absolute w-full h-full flex flex-col items-start justify-end text-slate-50 p-8 text-start">
-									<p class="font-light text-md my-0 truncate w-full">Tutorial</p>
-									<h1 class="text-2xl font-bold my-0 truncate w-full"><strong>Tener el CPU al 100%</strong></h1>
-									<p class="font-light text-md my-0 truncate w-full">Aprende como utilizar tu CPU al 100%</p>
-								</a>
+							<div class="overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 group">
+								<div class="relative bg-cover bg-center h-80" style="background-image: url('src/img/image.png')">
+									<span class="absolute transition-opacity duration-300 inset-0 bg-custom-gradient group-hover:opacity-80"></span>
+									<a href="" class="absolute w-full h-full flex flex-col items-start justify-end text-slate-50 p-8 text-start">
+										<p class="font-light text-md my-0 truncate w-full">Tutorial</p>
+										<h1 class="text-2xl font-bold my-0 truncate w-full"><strong>Tener el CPU al 100%</strong></h1>
+										<p class="font-light text-md my-0 truncate w-full">Aprende como utilizar tu CPU al 100%</p>
+									</a>
+								</div>
 							</div>
-						</div>
-						<div class="overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 group">
-							<div class="relative bg-cover bg-center h-80" style="background-image: url('src/img/image.png')">
-								<span class="absolute transition-opacity duration-300 inset-0 bg-custom-gradient group-hover:opacity-80"></span>
-								<a href="" class="absolute w-full h-full flex flex-col items-start justify-end text-slate-50 p-8 text-start">
-									<p class="font-light text-md my-0 truncate w-full">Tutorial</p>
-									<h1 class="text-2xl font-bold my-0 truncate w-full"><strong>Tener el CPU al 100%</strong></h1>
-									<p class="font-light text-md my-0 truncate w-full">Aprende como utilizar tu CPU al 100%</p>
-								</a>
+							<div class="overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 group">
+								<div class="relative bg-cover bg-center h-80" style="background-image: url('src/img/image.png')">
+									<span class="absolute transition-opacity duration-300 inset-0 bg-custom-gradient group-hover:opacity-80"></span>
+									<a href="" class="absolute w-full h-full flex flex-col items-start justify-end text-slate-50 p-8 text-start">
+										<p class="font-light text-md my-0 truncate w-full">Tutorial</p>
+										<h1 class="text-2xl font-bold my-0 truncate w-full"><strong>Tener el CPU al 100%</strong></h1>
+										<p class="font-light text-md my-0 truncate w-full">Aprende como utilizar tu CPU al 100%</p>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="bg-slate-950 bg-opacity-40 mt-10 px-5">
-				<footer class="container mx-auto py-8 top-0 z-10 w-full">
+			<section class="py-20">
+				<div class="container mx-auto px-5">
+					<div class="flex justify-between items-center text-white pb-10" data-aos="fade-up">
+						<div class="text-left">
+							<h1 class="text-2xl text-computara font-extralight">Mejores <strong class="text-white font-semibold">programas</strong></h1>
+							<p class="mt-2 mb-5 font-extralight text-lg text-gray-300">Encuentra los mejores programas para ser utilizados en windows y en otras plataformas</p>
+						</div>
+						<div class="text-right">
+							<a href="" class="bg-gradient-computara-2 px-4 py-2 text-white rounded-[5px] font-light group hover:bg-gradient-computara-1 transition-background-color duration-1000 flex items-center gap-2">
+								Ver más
+								<i class="fa fa-angles-right opacity-40 group-hover:opacity-100 group-hover:translate-x-1 transform transition-all duration-300"></i>
+							</a>
+						</div>
+					</div>
+					<div class="container mx-auto py-0" data-aos="fade-up">
+						<div class="grid grid-cols-3 gap-4">
+							<div class="overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 group">
+								<div class="relative bg-cover bg-center h-80" style="background-image: url('src/img/image.png')">
+									<span class="absolute transition-opacity duration-300 inset-0 bg-custom-gradient group-hover:opacity-80"></span>
+									<a href="" class="absolute w-full h-full flex flex-col items-start justify-end text-slate-50 p-8 text-start">
+										<p class="font-light text-md my-0 truncate w-full">Tutorial</p>
+										<h1 class="text-2xl font-bold my-0 truncate w-full"><strong>Tener el CPU al 100%</strong></h1>
+										<p class="font-light text-md my-0 truncate w-full">Aprende como utilizar tu CPU al 100%</p>
+									</a>
+								</div>
+							</div>
+							<div class="overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 group">
+								<div class="relative bg-cover bg-center h-80" style="background-image: url('src/img/image.png')">
+									<span class="absolute transition-opacity duration-300 inset-0 bg-custom-gradient group-hover:opacity-80"></span>
+									<a href="" class="absolute w-full h-full flex flex-col items-start justify-end text-slate-50 p-8 text-start">
+										<p class="font-light text-md my-0 truncate w-full">Tutorial</p>
+										<h1 class="text-2xl font-bold my-0 truncate w-full"><strong>Tener el CPU al 100%</strong></h1>
+										<p class="font-light text-md my-0 truncate w-full">Aprende como utilizar tu CPU al 100%</p>
+									</a>
+								</div>
+							</div>
+							<div class="overflow-hidden rounded-xl shadow-xl transition-all duration-500 hover:scale-105 group">
+								<div class="relative bg-cover bg-center h-80" style="background-image: url('src/img/image.png')">
+									<span class="absolute transition-opacity duration-300 inset-0 bg-custom-gradient group-hover:opacity-80"></span>
+									<a href="" class="absolute w-full h-full flex flex-col items-start justify-end text-slate-50 p-8 text-start">
+										<p class="font-light text-md my-0 truncate w-full">Tutorial</p>
+										<h1 class="text-2xl font-bold my-0 truncate w-full"><strong>Tener el CPU al 100%</strong></h1>
+										<p class="font-light text-md my-0 truncate w-full">Aprende como utilizar tu CPU al 100%</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bg-slate-950 bg-opacity-10 py-20">
+				<div class="container mx-auto px-5">
+					<div class="flex justify-center items-center text-white pb-10" data-aos="fade-up">
+						<div class="text-center">
+							<h1 class="text-2xl text-white font-extralight">Con la confianza de los <strong class="text-computara font-semibold">suscriptores</strong></h1>
+							<p class="mt-2 mb-5 font-extralight text-lg text-gray-300">Algunos de los tantos comentarios en videos de youtube</p>
+						</div>
+					</div>
+					<div class="container mx-auto py-0" data-aos="fade-up">
+						<div class="relative overflow-hidden">
+							<ul class="columns-1 gap-5 sm:columns-2 sm:gap-7 md:columns-3 pb-16">
+								<li class="border bg-[#0b142248] dark:border-gray-700 rounded-2xl p-5 break-inside-avoid mb-7">
+									<header class="flex items-center gap-2.5">
+										<img src="src/img/image.png" alt="Avatar de dartilesm" loading="lazy" width="80" height="80" class="w-16 aspect-square rounded-full object-cover" />
+										<div>
+											<h3 class="text-lg font-semibold text-white">dartilesm</h3>
+											<p class="text-white/60">Suscriptor hace 10 meses</p>
+										</div>
+									</header>
+									<p class="text-white/70 mt-2.5">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam quam at cupiditate, voluptate voluptatem hic perferendis autem dolores maiores corporis fuga odio corrupti officiis fugiat eveniet aut libero numquam!
+									</p>
+								</li>
+								<li class="border bg-[#0b142248] dark:border-gray-700 rounded-2xl p-5 break-inside-avoid mb-7">
+									<header class="flex items-center gap-2.5">
+										<img src="src/img/image.png" alt="Avatar de dartilesm" loading="lazy" width="80" height="80" class="w-16 aspect-square rounded-full object-cover" />
+										<div>
+											<h3 class="text-lg font-semibold text-white">dartilesm</h3>
+											<p class="text-white/60">Suscriptor hace 10 meses</p>
+										</div>
+									</header>
+									<p class="text-white/70 mt-2.5">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam quam at cupiditate, voluptate voluptatem hic perferendis autem dolores maiores corporis fuga odio corrupti officiis fugiat eveniet aut libero numquam!
+									</p>
+								</li>
+								<li class="border bg-[#0b142248] dark:border-gray-700 rounded-2xl p-5 break-inside-avoid mb-7">
+									<header class="flex items-center gap-2.5">
+										<img src="src/img/image.png" alt="Avatar de dartilesm" loading="lazy" width="80" height="80" class="w-16 aspect-square rounded-full object-cover" />
+										<div>
+											<h3 class="text-lg font-semibold text-white">dartilesm</h3>
+											<p class="text-white/60">Suscriptor hace 10 meses</p>
+										</div>
+									</header>
+									<p class="text-white/70 mt-2.5">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quisquam quam at cupiditate, voluptate voluptatem hic perferendis autem dolores maiores corporis fuga odio corrupti officiis fugiat eveniet aut libero numquam!
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bg-slate-950 bg-opacity-40">
+				<footer class="container mx-auto py-8 px-5 top-0 z-10 w-full">
 					<div class="flex justify-between items-center">
 						<p class="text-gray-500 font-light text-lg">
-							<a href="www.computara.org.pe" target="_blank" class="font-bold text-gray-300"><strong>Computara</strong></a> &copy; Todos los derechos reservados 2025
+							<a href="" target="_blank" class="font-bold text-gray-300"><strong>Computara</strong></a> &copy; Todos los derechos reservados 2025
 						</p>
 						<div>
-							<ul class="flex space-x-6 text-lg text-gray-300">
+							<ul class="flex space-x-6 text-lg">
 								<li>
-									<a href="#" class=""> Aviso legal</a>
+									<a href="#" class="text-gray-300 hover:text-gray-50"> Aviso legal</a>
 								</li>
 								<li>
-									<a href="#" class="">Política de privacidad</a>
+									<a href="#" class="text-gray-300 hover:text-gray-50">Política de privacidad</a>
 								</li>
 							</ul>
 						</div>
@@ -183,6 +247,12 @@
 				offset: 100,
 				easing: 'ease-in-out',
 				once: true
+			})
+			const menuToggle = document.getElementById('menu-toggle')
+			const menu = document.getElementById('navbar-default')
+
+			menuToggle.addEventListener('click', () => {
+				menu.classList.toggle('hidden')
 			})
 		</script>
 	</body>
